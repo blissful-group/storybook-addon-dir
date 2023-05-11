@@ -6,22 +6,7 @@ on:
       - main
 
 jobs:
-  changeset:
-    runs-on: ubuntu-latest
-    steps:
-      -
-        name: Checkout code
-        uses: actions/checkout@v3
-      -
-        name: Validate changeset ✅/❌...
-        run: |
-          if [ $(ls -1 .changeset | wc -l) -lt 3 ]; then
-            echo "No changesets found"
-            exit 1
-          fi
-
   release:
     name: Releasing '${{ github.event.repository.name }}' 📭...
     uses: ./.github/workflows/release.workflow.yml
-    needs: [changeset]
     secrets: inherit
