@@ -31,5 +31,5 @@ export default config
 ## examples
 The addon adds a button to the tool bar, at the top:
 
-![inactive example](./assets/inactive.png)
-![active example](./assets/active.png)
+![inactive example](https://github.com/blissful-group/storybook-addon-dir/blob/main/assets/inactive.png?raw=true)
+![active example](https://github.com/blissful-group/storybook-addon-dir/blob/main/assets/active.png?raw=true)
