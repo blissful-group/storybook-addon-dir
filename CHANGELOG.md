@@ -1,5 +1,12 @@
 # storybook-addon-dir
 
+## 1.0.2
+
+### Patch Changes
+
+- 16f9aab: Add support for i18n locale swaps
+- 23ab1c4: Add prettier config
+
 ## 1.0.1
 
 ### Patch Changes
