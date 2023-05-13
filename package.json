@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "build": "rimraf ./dist && tsup src/preset.ts src/manager.tsx --external ./manager",
-    "release": "pnpm build && changeset publish",
+    "release": "pnpm build && pnpm publish",
     "changeset": "changeset"
   },
   "keywords": [
