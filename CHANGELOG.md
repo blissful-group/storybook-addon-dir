@@ -1,5 +1,11 @@
 # storybook-addon-dir
 
+## 1.0.3
+
+### Patch Changes
+
+- 7d83ce8: Changed to pnpm releasing
+
 ## 1.0.2
 
 ### Patch Changes
