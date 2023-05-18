@@ -10,7 +10,8 @@
   "scripts": {
     "build": "rimraf ./dist && tsup src/preset.ts src/manager.tsx --external ./manager",
     "release": "pnpm build && pnpm publish",
-    "changeset": "changeset"
+    "changeset": "changeset",
+    "prepare": "husky install"
   },
   "keywords": [
     "storybook",
@@ -34,9 +35,12 @@
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.1",
+    "@commitlint/cli": "^17.6.3",
+    "@commitlint/config-conventional": "^17.6.3",
     "@tsconfig/node18": "^2.0.0",
     "@types/node": "^18.16.3",
     "@types/react": "^18.2.5",
+    "husky": "^8.0.3",
     "rimraf": "^5.0.0",
     "tsup": "^6.7.0"
   }
