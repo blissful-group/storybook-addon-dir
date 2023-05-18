@@ -33,6 +33,7 @@ jobs:
         uses: changesets/action@v1.4.4
         with:
           publish: pnpm run release
+          commit: "chore: version packages"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
