@@ -1,6 +1,6 @@
 {
   "name": "storybook-addon-dir",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A simple addon for storybook to swap between LTR and RTL",
   "main": "dist/preset.js",
   "files": [
