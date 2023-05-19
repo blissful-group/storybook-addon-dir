@@ -28,6 +28,9 @@ jobs:
         name: Installing dependencies
         run: pnpm install --frozen-lockfile
       -
+        name: Linting library
+        run: pnpm lint
+      -
         name: Create Release Pull Request or Publish
         id: changesets
         uses: changesets/action@v1.4.4
