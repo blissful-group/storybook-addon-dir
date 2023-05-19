@@ -1,5 +1,14 @@
 # storybook-addon-dir
 
+## 1.0.6
+
+### Patch Changes
+
+- bd39d3c: Add badges
+- bd39d3c: Add pull request pipeline
+- bd39d3c: Add logo
+- bd39d3c: Add FUNDING
+
 ## 1.0.5
 
 ### Patch Changes
