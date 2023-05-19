@@ -2,14 +2,14 @@ import { useState } from 'react'
 import i18n from 'i18next'
 import { Icons, IconButton } from '@storybook/components'
 import { STORY_CHANGED, GLOBALS_UPDATED } from '@storybook/core-events'
-import { API, addons, types } from '@storybook/manager-api'
+import { type API, addons, types } from '@storybook/manager-api'
 
 const ADDON_ID = 'storybook-addon-dir'
 const PANEL_ID = `${ADDON_ID}/panel`
 
 const isRoot = (input: any): input is Document => !!input
 
-type Direction = 'rtl' | 'ltr'
+const direction = { true: 'rtl', false: 'ltr' }
 const labels = { true: 'RTL active', false: 'RTL inactive' }
 
 type ButtonProps = {
@@ -34,7 +34,7 @@ function Button({ active, api, config, title }: ButtonProps) {
       return
     }
 
-    html.setAttribute('dir', (value ? 'rtl' : 'ltr') satisfies Direction)
+    html.setAttribute('dir', direction[`${value}`])
     setChecked(value)
   }
 
@@ -47,8 +47,7 @@ function Button({ active, api, config, title }: ButtonProps) {
   })
 
   api.on(GLOBALS_UPDATED, ({ globals }) => {
-    const direction = i18n.dir(globals.locale ?? 'en')
-    update(direction === 'rtl')
+    update(i18n.dir(globals.locale ?? 'en') === 'rtl')
   })
 
   return (
