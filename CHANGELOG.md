@@ -1,5 +1,12 @@
 # storybook-addon-dir
 
+## 1.0.5
+
+### Patch Changes
+
+- 1f71094: Add tsc and eslint linting
+- 1f71094: Update manager to be a little tighter on code safety
+
 ## 1.0.4
 
 ### Patch Changes
